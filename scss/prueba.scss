@@ -1,0 +1,410 @@
+@import "generales";
+
+
+
+.enlacesInicio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    padding-left: 0px;
+}
+
+.liEnlacesInicio {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-width: thin;
+    width: 10%;
+    height: 30%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.class {
+    color: aliceblue;
+}
+
+
+@keyframes agrandar {
+    0%{
+        font-size: 70px;
+    }
+    50%{
+        font-size: 90px;
+    }
+    100%{
+        font-size: 70px;
+    }
+}
+
+#subtituloH1 {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#imagenComienzo {
+    height: 100%;
+    width: 100%;
+}
+
+.fotosGaleria {
+    height: 300px;
+    width: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+#bienvenidosAContactos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#somosPanes {
+    background-color: rgb(58, 111, 162);
+    text-align: center;
+    color: white;
+    font-style: italic;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.4);
+    padding: 5px;
+}
+
+.pGaleria {
+
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+
+}
+
+#galeria {
+    display: flex;
+    height: 900px;
+    width: 100%;
+    border: 5px solid black;
+}
+
+
+
+
+#menuForm {
+    border-style: solid;
+    padding: 5px;
+}
+
+#h2Menu {
+    text-align: center;
+}
+
+#Revelo {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.recetaPanDeQueso {
+    border-style: solid;
+}
+
+
+.letraPanDeQueso {
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 30px;
+
+}
+
+.tutorialPanDeQueso {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secreto {
+    text-align: center;
+    font-weight: 700;
+}
+
+.ingredientes {
+    font-weight: 900;
+}
+
+.pIngredientes {
+    @extend .ingredientes;
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+#formularioContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    height: 700px;
+    width: 500px;
+    background-color: rgb(202, 208, 214);
+    margin-bottom: 10px;
+
+}
+
+.divForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#pContactate {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.contactoNA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#pregunta {
+    width: 279.17px;
+}
+
+#textoComentario {
+   @extend .contactoNA;
+   
+
+}
+
+#comentario1 {
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+#todasLasFotos {
+  
+    width: 100%;
+
+}
+
+.imagenesGaleria {
+    height: 100%;
+    width: 100%;
+}
+
+.menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 5px solid black;
+    height: 14%;
+}
+
+
+
+.menusa {
+    color: black;
+    font-weight: 800;
+    font-size: larger;
+}
+
+#divmenu {
+    height: 600px;
+}
+
+#menuUl {
+    height: 100%;
+}
+
+#somosPanes{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media only screen and ( max-width:600px){
+    #todasLasFotos{
+        display: grid;
+        grid-template-columns: 25%  25% 25%;
+        grid-template-rows: 9%  9%  9%  9%  9%  9%  9%  9%  9%  9%;
+        grid-template-areas: "a1    a1  a1"
+                             "a1    a1  a1"
+                             "a2    a2  a2"
+                             "a3    a4  a3"
+                             "a3    a5  a3"
+                             "a3    a6  a3"
+                             "a3    a7  a3"
+                             "a3    a8  a3"
+                             "a3    a9  a3"
+                             "a10   a10 a10";
+    }
+    nav{
+        grid-area: a1;
+    }
+    footer{
+        grid-area: a10;
+    }
+    #foto1{
+        grid-area: a4;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto2{
+        grid-area: a5;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto3{
+        grid-area: a6;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto4{
+        grid-area: a7;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto5{
+        grid-area: a8;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto6{
+        grid-area: a9;
+        justify-self: center;
+        align-self: center;
+    }
+    #maquetaIndex{
+        display: grid;
+        grid-template-columns: 17%  17% 17% 17% 17%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 3fr 1fr ;
+        grid-template-areas: "a1    a1  a1  a1  a1"
+                             "a2    a2  a2  a2  a2"
+                             "a3    a3  a3  a3  a3"
+                             "a4    a4  a4  a4  a4"
+                             "a5    a5  a5  a5  a5"
+                             "a5    a5  a5  a5  a5"
+                             "a6    a6  a6  a6  a6";
+
+    }
+}
+@media only screen and ( min-width:600px){
+    #todasLasFotos{
+        display: grid;
+        grid-template-columns: 17% 17% 17% 17% 17%;
+        grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+        grid-template-areas: "a1    a1  a1  a1  a1"
+                             "a2    a2  a2  a2  a2"
+                             "a3    a4  a5  a6  a3"
+                             "a3    a4  a5  a6  a3"
+                             "a3    a7  a8  a9  a3"
+                             "a3    a7  a8  a9  a3"
+                             "a10   a10 a10 a10 a10";
+   
+    
+    }
+    #galeriah1{
+        
+        grid-area: a2;    
+        justify-self: center;
+        align-self: center;
+    }
+    nav{
+        grid-area: a1;
+        justify-self: center;
+        align-self: center;
+    }
+    footer{
+        grid-area: a10;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto1{
+        grid-area: a4;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto2{
+        grid-area: a5;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto3{
+        grid-area: a6;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto4{
+        grid-area: a7;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto5{
+        grid-area: a8;
+        justify-self: center;
+        align-self: center;
+    }
+    #foto6{
+        grid-area: a9;
+        justify-self: center;
+        align-self: center;
+    }
+}
+@keyframes  ImagenComienzo{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    }
+    /*
